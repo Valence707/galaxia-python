@@ -1,0 +1,50 @@
+This could be a 2D open-world game where the player collects resources, builds stuff, and constantly tries to reach new heights.
+Progression, adventure, technology, combat, building, music. Everything.
+To-do:
+    Add day / night
+    Add block brightness / lighting effects 
+        draw dark surfaces over tiles and in air, only on drawn tiles (if tile is on screen)
+
+    Add player spawn generation to world generator
+    Add inventory
+    Add item collection and dropping
+    Add chests
+    Add furnaces
+    Add ore ingots
+    Add player armor
+
+    Add enemies
+    Add more accurate physics
+        Gravity
+
+    Add biomes
+        Ocean
+        Forest
+        Plains
+        Snow
+        Desert
+        Mountains
+
+    Make world round (player can walk 'around' the world)
+    Add option to create worlds and players and save them / rename them and stuff
+    Add animations based on player's position in world
+    Slow down chunk loading to eliminate lag spikes
+
+Log:
+2022-7-18:
+    For the past two weeks, I've created the ability to traverse a chunk-based procedurally-generated world that is saved in a chunk map.
+
+2022-7-25:
+    Did a ton of optimization for chunks / rendering.
+    Created world generator
+    Established framerate independence
+    Made framerate independence pixel-precise
+
+2022-7-26:
+    Made collision detection functional at all framerates (collision detection works for changes in position greater than tile sizes)
+    Modified jumping (jumping is now a velocity assignment rather than an increment)
+    Added simple caves
+
+2022-7-28:
+    Added Coal, Copper, Iron, and Gold textures and natural generation.
+    Optimized rendering of chunks
